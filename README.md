@@ -1,9 +1,9 @@
 # README
 ```
-comandos 123;
+comando: git status;
 ```
 
 ## Nuevos comandos
 ```
-comandos 546;
+comando: git add --all;
 ```
