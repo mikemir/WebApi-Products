@@ -1,9 +1,9 @@
 # README
 ```
-comandos 123;
+dotnet new webapi
 ```
 
 ## Nuevos comandos
 ```
-comandos 546;
+dotnet restore
 ```
