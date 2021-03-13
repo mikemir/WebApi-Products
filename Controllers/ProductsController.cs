@@ -26,7 +26,7 @@ namespace webapi_productos.Controllers
                 return new Product{
                     Name = _names[rand.Next(0, 7)],
                     CreationDate = DateTime.Now.AddDays(-rand.Next(31)),
-                    Description = "..."
+                    Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 };
             });
 
