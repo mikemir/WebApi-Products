@@ -30,7 +30,7 @@ namespace webapi_productos
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "webapi_productos", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApi - Products", Version = "v1" });
             });
         }
 
@@ -41,7 +41,7 @@ namespace webapi_productos
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "webapi_productos v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WebApi - Products v1"));
             }
 
             app.UseHttpsRedirection();
