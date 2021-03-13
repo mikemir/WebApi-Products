@@ -17,7 +17,18 @@ namespace webapi_productos.Controllers
             _loggger = loggger;
         }
 
-        private static string[] _names = new[] { "Smart TV", "Smart Watch", "Cellphone", "iPad Pro", "iPhone X", "Laptop i5 16GB RAM", "Laptop Ryzen 5000 16GB RAM", "Smart Hat" };
+        private static string[] _names = new[] {
+                                                    "Smart TV",
+                                                    "Smart Watch",
+                                                    "Cellphone",
+                                                    "iPad Pro",
+                                                    "iPhone X",
+                                                    "Laptop i5 16GB RAM",
+                                                    "Laptop Ryzen 5000 16GB RAM",
+                                                    "Smart Hat",
+                                                    "Monitor HP 24f",
+                                                    "Bluetooth Speaker"
+                                                };
 
         private IEnumerable<Product> GetEnumerable(){
 
