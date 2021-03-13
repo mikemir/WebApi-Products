@@ -33,7 +33,7 @@ namespace webapi_productos.Controllers
         private IEnumerable<Product> GetEnumerable(){
 
             var result = Enumerable.Range(0, 15).Select(index => {
-                var rand = new Random();
+                var rand = new Random(DateTime.Now.Millisecond);
                 return new Product{
                     Name = _names[rand.Next(0, 7)],
                     CreationDate = DateTime.Now.AddDays(-rand.Next(31)),
