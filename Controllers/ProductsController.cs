@@ -17,7 +17,18 @@ namespace webapi_productos.Controllers
             _loggger = loggger;
         }
 
-        private static string[] _names = new[] { "Smart TV", "Smart Watch", "Cellphone", "iPad Pro", "iPhone X", "Laptop i5 16GB RAM", "Laptop Ryzen 5000 16GB RAM", "Smart Hat" };
+        private static string[] _names = new[] {
+                                                    "Smart TV",
+                                                    "Smart Watch",
+                                                    "Cellphone",
+                                                    "iPad Pro",
+                                                    "iPhone X",
+                                                    "Laptop i5 16GB RAM",
+                                                    "Laptop Ryzen 5000 16GB RAM",
+                                                    "Smart Hat",
+                                                    "Monitor HP 24f",
+                                                    "Bluetooth Speaker"
+                                                };
 
         private IEnumerable<Product> GetEnumerable(){
 
@@ -26,7 +37,7 @@ namespace webapi_productos.Controllers
                 return new Product{
                     Name = _names[rand.Next(0, 7)],
                     CreationDate = DateTime.Now.AddDays(-rand.Next(31)),
-                    Description = "..."
+                    Description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
                 };
             });
 
