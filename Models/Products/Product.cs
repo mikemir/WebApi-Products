@@ -9,7 +9,7 @@ namespace webapi_productos.Models.Products
             ProductId = Guid.NewGuid().ToString();
         }
 
-        public string ProductId { private get; set; }
+        public string ProductId { get; private set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime CreationDate { get; set; }
