@@ -7,3 +7,8 @@ comando: git status;
 ```
 comando: git add --all;
 ```
+
+# Creditos.
+
+* Michael Emir Reynosa
+* Martha Vilma Peña <3
